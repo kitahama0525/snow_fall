@@ -1,0 +1,65 @@
+.canvas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+#canvas {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-color: #0d2247; */
+  width: 100vw;
+  height: 100vh;
+}
+
+html,
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+.img .is-sp {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .img .is-sp {
+    display: block;
+  }
+
+  .img .is-pc {
+    display: none;
+  }
+}
+
+.c-button-float {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 324px;
+  height: 64px;
+  font-weight: 700;
+  border-radius: 1000px;
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #5bc0eb;
+  color: #fff;
+  background-color: #5bc0eb;
+  z-index: 10;
+  transition: all 0.3s;
+}
+
+.c-button-float:hover {
+  background-color: #fff;
+  color: #5bc0eb;
+}
